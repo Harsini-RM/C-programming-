@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100],s2[100],i=0;
+    printf("the string is \n");
+    scanf("%d",str);
+    int l=strlen(str);
+    int temp=l-1;
+    while(i<=l-1)
+    {
+        s2[i]=str[temp];
+        i++;
+        temp--;
+    }
+    int a=strcmp(str,s2);
+    if(a==0)
+    {
+        printf("palindrome");
+    }
+    else
+    {
+        printf("not palindrome");
+    }
+    return 0;
+}
+
+
