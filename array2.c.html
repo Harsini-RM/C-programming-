@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+ int n;
+ printf("the number in array\n : ");
+ scanf("%d",&n);
+ int a[n];
+ printf("Enter a number : ");
+ for(int i=0;i<n;i++)
+ {
+     scanf("%d",&a[i]);
+ }
+ int small=a[0];
+     for(int i=0;i<n;i++)
+     {
+         if(a[i]<small)
+         {
+     small=a[i];
+         }
+     }
+ printf("%d\n",small);
+return 0;
+}
+
+
